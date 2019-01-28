@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
   display: block; }
 
@@ -130,3 +131,141 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
+
+body {
+  font-family: 'Montserrat', sans-serif; }
+
+@-webkit-keyframes menuicon {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes menuicon {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.home-hero--wrapper {
+  background-image: url(../../assets/plant_header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+  position: relative;
+  margin: 0 auto; }
+  @media (max-width: 767.98px) {
+    .home-hero--wrapper {
+      height: 80vh;
+      margin-top: 10px;
+      background-image: url(../../assets/plant_hero_mobile.jpg); } }
+  .home-hero--wrapper .home-hero--scroll {
+    position: absolute;
+    bottom: 25%;
+    right: 0;
+    color: #000;
+    font-size: 20px;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    border: none;
+    background-color: transparent; }
+    .home-hero--wrapper .home-hero--scroll:after {
+      content: "";
+      position: absolute;
+      width: 1px;
+      height: 90px;
+      background-color: #000;
+      bottom: -31px;
+      right: -54px;
+      -webkit-transform: rotate(90deg);
+              transform: rotate(90deg); }
+    @media (max-width: 767.98px) {
+      .home-hero--wrapper .home-hero--scroll {
+        bottom: 30%;
+        left: -30px; } }
+
+.home-nav--wrapper {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 30px 0 10px 0;
+  border-bottom: 1px solid #dadada;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end; }
+  .home-nav--wrapper .home-nav.one .logo {
+    font-size: 40px;
+    color: #000; }
+    .home-nav--wrapper .home-nav.one .logo .logo-period {
+      color: #7ad86d; }
+  .home-nav--wrapper .home-nav.one a:hover {
+    text-decoration: none; }
+  .home-nav--wrapper .home-nav.two {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end; }
+    .home-nav--wrapper .home-nav.two a {
+      color: #000;
+      margin: 10px;
+      -webkit-transition: all 1s ease;
+      transition: all 1s ease; }
+      .home-nav--wrapper .home-nav.two a:hover {
+        text-decoration: none;
+        color: #7ad86d; }
+    @media (max-width: 767.98px) {
+      .home-nav--wrapper .home-nav.two {
+        display: none; } }
+  @media (max-width: 767.98px) {
+    .home-nav--wrapper {
+      border-bottom: none; } }
+  .home-nav--wrapper .dropdown.mobile .nav-button {
+    color: #000;
+    background-color: unset;
+    border: none;
+    position: relative;
+    -webkit-transition: 2s;
+    transition: 2s; }
+    .home-nav--wrapper .dropdown.mobile .nav-button:after {
+      content: unset; }
+    .home-nav--wrapper .dropdown.mobile .nav-button:before {
+      content: "+";
+      position: absolute;
+      color: #000;
+      top: -30px;
+      font-size: 30px;
+      right: -32px; }
+    .home-nav--wrapper .dropdown.mobile .nav-button:focus {
+      -webkit-box-shadow: none;
+              box-shadow: none; }
+  .home-nav--wrapper .dropdown.mobile .dropdown-menu.show {
+    min-width: unset;
+    position: absolute;
+    -webkit-transform: translate3d(-64px, 18px, 0px) !important;
+            transform: translate3d(-64px, 18px, 0px) !important;
+    will-change: transform;
+    background-color: transparent;
+    text-align: right;
+    border: none;
+    background-color: #ffebf7;
+    border-radius: unset; }
+    .home-nav--wrapper .dropdown.mobile .dropdown-menu.show a {
+      font-weight: 700; }
+  @media (max-width: 767.98px) {
+    .home-nav--wrapper .dropdown.mobile .dropdown-menu.show {
+      left: 30px !important; }
+      .home-nav--wrapper .dropdown.mobile .dropdown-menu.show a {
+        padding: 1.25rem 1.5rem; } }
+  @media (min-width: 576px) {
+    .home-nav--wrapper .dropdown.mobile {
+      display: none; } }
